@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Практика 2_7 </title>
+</head>
+<body>
+<script>
+   window.onload = function() {
+    var drawingCanvas = document.getElementById('circle');
+     var ctx = drawingCanvas.getContext('2d');
+     ctx.beginPath();
+     ctx.arc(100,55,50,0,Math.PI*2);
+     ctx.stroke();
+	 ctx.closePath();
+	 ctx.beginPath();
+	 ctx.arc(100,55,25,0,Math.PI*2);
+	 ctx.stroke();
+	 ctx.closePath();
+	 ctx.strokeRect(50,120,100,120);
+	 ctx.strokeRect(75,150,50,60);
+	 }
+
+</script>
+<p style="font-size: 1.5em; font-family:Arial"><b>Демидов Василий Романович</b></p>
+<canvas id="circle" widht="500" height="500"></canvas>
+</body>
+</html>
